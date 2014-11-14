@@ -7,15 +7,15 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="1021" inline="false">
-        <value name="IF0">
-          <block type="sensor_button" id="835">
-            <field name="OBJECT">UP</field>
-          </block>
-        </value>
-        <statement name="DO0">
-          <block type="oled_cleardisplay" id="1039">
-            <next>
+      <block type="oled_cleardisplay" id="1039">
+        <next>
+          <block type="controls_if" id="1021" inline="false">
+            <value name="IF0">
+              <block type="sensor_button" id="835">
+                <field name="OBJECT">UP</field>
+              </block>
+            </value>
+            <statement name="DO0">
               <block type="oled_setcursor" id="1050" inline="true">
                 <value name="STARTX">
                   <block type="math_number" id="1064">
@@ -57,9 +57,9 @@
                   </block>
                 </next>
               </block>
-            </next>
+            </statement>
           </block>
-        </statement>
+        </next>
       </block>
     </statement>
   </block>
