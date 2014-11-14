@@ -45,6 +45,16 @@
                                 <field name="NUM">20</field>
                               </block>
                             </value>
+                            <next>
+                              <block type="oled_color" id="260">
+                                <field name="OBJECT">GREEN</field>
+                                <next>
+                                  <block type="oled_linerect" id="261">
+                                    <field name="OBJECT">LINE</field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
