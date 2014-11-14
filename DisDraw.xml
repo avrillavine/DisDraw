@@ -22,7 +22,7 @@
             </value>
             <next>
               <block type="controls_if" id="1021" inline="false">
-                <mutation elseif="2"></mutation>
+                <mutation elseif="1"></mutation>
                 <value name="IF0">
                   <block type="sensor_button" id="835">
                     <field name="OBJECT">UP</field>
@@ -58,36 +58,12 @@
                       <block type="oled_setcursor" id="1148" inline="true">
                         <value name="STARTX">
                           <block type="math_number" id="1149">
-                            <field name="NUM">1</field>
+                            <field name="NUM">10</field>
                           </block>
                         </value>
                         <value name="STARTY">
                           <block type="math_number" id="1150">
                             <field name="NUM">1</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <value name="IF2">
-                  <block type="sensor_button" id="1216">
-                    <field name="OBJECT">LEFT</field>
-                  </block>
-                </value>
-                <statement name="DO2">
-                  <block type="oled_linerect" id="1212">
-                    <field name="OBJECT">RECT</field>
-                    <next>
-                      <block type="oled_setcursor" id="1213" inline="true">
-                        <value name="STARTX">
-                          <block type="math_number" id="1214">
-                            <field name="NUM">20</field>
-                          </block>
-                        </value>
-                        <value name="STARTY">
-                          <block type="math_number" id="1215">
-                            <field name="NUM">20</field>
                           </block>
                         </value>
                       </block>
