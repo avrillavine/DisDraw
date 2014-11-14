@@ -222,7 +222,4 @@
       </block>
     </next>
   </block>
-  <block type="sensor_button" id="1429" x="271" y="290">
-    <field name="OBJECT">ENTER</field>
-  </block>
 </xml>
