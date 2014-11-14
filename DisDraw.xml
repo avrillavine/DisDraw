@@ -132,6 +132,7 @@
                         </value>
                         <statement name="DO">
                           <block type="controls_if" id="1394" inline="false">
+                            <mutation elseif="1"></mutation>
                             <value name="IF0">
                               <block type="logic_compare" id="1395" inline="true">
                                 <field name="OP">GT</field>
@@ -165,22 +166,25 @@
                                     </value>
                                   </block>
                                 </value>
-                                <next>
-                                  <block type="procedures_ifreturn" id="1589" inline="true">
-                                    <mutation value="1"></mutation>
-                                    <value name="CONDITION">
-                                      <block type="variables_get" id="1687">
-                                        <field name="VAR">size</field>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE">
-                                      <block type="math_number" id="1665">
-                                        <field name="NUM">0</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
                               </block>
+                            </statement>
+                            <value name="IF1">
+                              <block type="logic_compare" id="1715" inline="true">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="variables_get" id="1716">
+                                    <field name="VAR">size</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="1717">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO1">
+                              <block type="oled_cleardisplay" id="1718"></block>
                             </statement>
                             <next>
                               <block type="oled_cleardisplay" id="1402">
