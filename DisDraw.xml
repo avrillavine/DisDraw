@@ -29,10 +29,10 @@
                 </value>
                 <statement name="DO0">
                   <block type="controls_whileUntil" id="1243" inline="false">
-                    <field name="MODE">WHILE</field>
+                    <field name="MODE">UNTIL</field>
                     <value name="NUMBER">
                       <block type="sensor_button" id="1244">
-                        <field name="OBJECT">UP</field>
+                        <field name="OBJECT">DOWN</field>
                       </block>
                     </value>
                     <statement name="DO">
