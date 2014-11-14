@@ -82,12 +82,12 @@
                       <block type="oled_setcursor" id="1213" inline="true">
                         <value name="STARTX">
                           <block type="math_number" id="1214">
-                            <field name="NUM">-1</field>
+                            <field name="NUM">20</field>
                           </block>
                         </value>
                         <value name="STARTY">
                           <block type="math_number" id="1215">
-                            <field name="NUM">-1</field>
+                            <field name="NUM">20</field>
                           </block>
                         </value>
                       </block>
