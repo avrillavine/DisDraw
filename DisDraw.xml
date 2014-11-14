@@ -25,7 +25,7 @@
                 <field name="OBJECT">GREEN</field>
                 <next>
                   <block type="oled_linerect" id="147">
-                    <field name="OBJECT">RECT</field>
+                    <field name="OBJECT">LINE</field>
                     <next>
                       <block type="robot_delay" id="189" inline="true">
                         <value name="DELAY">
