@@ -203,39 +203,6 @@
                         </statement>
                       </block>
                     </statement>
-                    <statement name="ELSE">
-                      <block type="controls_if" id="1523" inline="false">
-                        <value name="IF0">
-                          <block type="sensor_button" id="1524">
-                            <field name="OBJECT">ENTER</field>
-                          </block>
-                        </value>
-                        <statement name="DO0">
-                          <block type="oled_color" id="1567">
-                            <field name="OBJECT">BLACK</field>
-                            <next>
-                              <block type="oled_linerect" id="1571">
-                                <field name="OBJECT">RECT</field>
-                                <next>
-                                  <block type="oled_setend" id="1568" inline="true">
-                                    <value name="ENDX">
-                                      <block type="math_number" id="1572">
-                                        <field name="NUM">50</field>
-                                      </block>
-                                    </value>
-                                    <value name="ENDY">
-                                      <block type="math_number" id="1573">
-                                        <field name="NUM">50</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                      </block>
-                    </statement>
                   </block>
                 </next>
               </block>
