@@ -12,12 +12,12 @@
           <block type="oled_setcursor" id="1137" inline="true">
             <value name="STARTX">
               <block type="math_number" id="1138">
-                <field name="NUM">10</field>
+                <field name="NUM">1</field>
               </block>
             </value>
             <value name="STARTY">
               <block type="math_number" id="1139">
-                <field name="NUM">10</field>
+                <field name="NUM">1</field>
               </block>
             </value>
             <next>
@@ -30,30 +30,30 @@
                 <statement name="DO0">
                   <block type="oled_cleardisplay" id="1039">
                     <next>
-                      <block type="oled_setcursor" id="1050" inline="true">
+                      <block type="oled_setcursor" id="1117" inline="true">
                         <value name="STARTX">
-                          <block type="math_number" id="1064">
-                            <field name="NUM">10</field>
+                          <block type="math_number" id="1118">
+                            <field name="NUM">1</field>
                           </block>
                         </value>
                         <value name="STARTY">
-                          <block type="math_number" id="1057">
-                            <field name="NUM">10</field>
+                          <block type="math_number" id="1119">
+                            <field name="NUM">1</field>
                           </block>
                         </value>
                         <next>
                           <block type="oled_linerect" id="1080">
                             <field name="OBJECT">RECT</field>
                             <next>
-                              <block type="oled_setcursor" id="1117" inline="true">
+                              <block type="oled_setcursor" id="1050" inline="true">
                                 <value name="STARTX">
-                                  <block type="math_number" id="1118">
-                                    <field name="NUM">1</field>
+                                  <block type="math_number" id="1064">
+                                    <field name="NUM">10</field>
                                   </block>
                                 </value>
                                 <value name="STARTY">
-                                  <block type="math_number" id="1119">
-                                    <field name="NUM">2</field>
+                                  <block type="math_number" id="1057">
+                                    <field name="NUM">10</field>
                                   </block>
                                 </value>
                               </block>
