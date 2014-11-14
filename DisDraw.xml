@@ -46,6 +46,7 @@
                         </value>
                         <statement name="DO">
                           <block type="controls_if" id="1329" inline="false">
+                            <mutation elseif="1"></mutation>
                             <value name="IF0">
                               <block type="logic_compare" id="1335" inline="true">
                                 <field name="OP">LT</field>
@@ -80,6 +81,14 @@
                                   </block>
                                 </value>
                               </block>
+                            </statement>
+                            <value name="IF1">
+                              <block type="sensor_button" id="1429">
+                                <field name="OBJECT">ENTER</field>
+                              </block>
+                            </value>
+                            <statement name="DO1">
+                              <block type="oled_cleardisplay" id="1430"></block>
                             </statement>
                             <next>
                               <block type="oled_cleardisplay" id="1039">
