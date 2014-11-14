@@ -1,17 +1,12 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="637" x="87" y="51">
-    <next>
-      <block type="oled_setcursor" id="638" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="639">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <value name="STARTY">
-          <block type="math_number" id="640">
-            <field name="NUM">1</field>
-          </block>
-        </value>
+  <block type="controls_if" id="457" inline="false" x="126" y="143">
+    <value name="IF0">
+      <block type="sensor_button" id="458">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="oled_cleardisplay" id="508">
         <next>
           <block type="controls_if" id="391" inline="false">
             <value name="IF0">
@@ -46,18 +41,6 @@
                     <next>
                       <block type="oled_linerect" id="456">
                         <field name="OBJECT">LINE</field>
-                        <next>
-                          <block type="controls_if" id="457" inline="false">
-                            <value name="IF0">
-                              <block type="sensor_button" id="458">
-                                <field name="OBJECT">DOWN</field>
-                              </block>
-                            </value>
-                            <statement name="DO0">
-                              <block type="oled_cleardisplay" id="508"></block>
-                            </statement>
-                          </block>
-                        </next>
                       </block>
                     </next>
                   </block>
@@ -67,6 +50,6 @@
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
