@@ -15,32 +15,37 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="oled_linerect" id="456">
-                <field name="OBJECT">LINE</field>
+              <block type="oled_color" id="681">
+                <field name="OBJECT">GREEN</field>
                 <next>
-                  <block type="oled_setcursor" id="488" inline="true">
-                    <value name="STARTX">
-                      <block type="math_number" id="489">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
-                    <value name="STARTY">
-                      <block type="math_number" id="490">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
+                  <block type="oled_linerect" id="456">
+                    <field name="OBJECT">LINE</field>
                     <next>
-                      <block type="oled_setend" id="634" inline="true">
-                        <value name="ENDX">
-                          <block type="math_number" id="635">
+                      <block type="oled_setcursor" id="488" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="489">
                             <field name="NUM">0</field>
                           </block>
                         </value>
-                        <value name="ENDY">
-                          <block type="math_number" id="636">
+                        <value name="STARTY">
+                          <block type="math_number" id="490">
                             <field name="NUM">1</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="oled_setend" id="634" inline="true">
+                            <value name="ENDX">
+                              <block type="math_number" id="635">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="ENDY">
+                              <block type="math_number" id="636">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
