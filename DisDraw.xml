@@ -119,15 +119,15 @@
                     </statement>
                     <value name="IF1">
                       <block type="sensor_button" id="1391">
-                        <field name="OBJECT">LEFT</field>
+                        <field name="OBJECT">DOWN</field>
                       </block>
                     </value>
                     <statement name="DO1">
                       <block type="controls_whileUntil" id="1392" inline="false">
-                        <field name="MODE">WHILE</field>
+                        <field name="MODE">UNTIL</field>
                         <value name="NUMBER">
                           <block type="sensor_button" id="1393">
-                            <field name="OBJECT">RIGHT</field>
+                            <field name="OBJECT">UP</field>
                           </block>
                         </value>
                         <statement name="DO">
