@@ -152,7 +152,7 @@
                                 <field name="VAR">size</field>
                                 <value name="VALUE">
                                   <block type="math_arithmetic" id="1399" inline="true">
-                                    <field name="OP">ADD</field>
+                                    <field name="OP">MINUS</field>
                                     <value name="A">
                                       <block type="variables_get" id="1400">
                                         <field name="VAR">size</field>
@@ -160,7 +160,7 @@
                                     </value>
                                     <value name="B">
                                       <block type="math_number" id="1401">
-                                        <field name="NUM">-30</field>
+                                        <field name="NUM">10</field>
                                       </block>
                                     </value>
                                   </block>
@@ -191,6 +191,24 @@
                                                 <field name="NUM">500</field>
                                               </block>
                                             </value>
+                                            <next>
+                                              <block type="oled_cleardisplay" id="1579">
+                                                <next>
+                                                  <block type="oled_setend" id="1580" inline="true">
+                                                    <value name="ENDX">
+                                                      <block type="math_number" id="1583">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ENDY">
+                                                      <block type="math_number" id="1584">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
