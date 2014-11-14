@@ -20,8 +20,18 @@
                 <next>
                   <block type="oled_setcursor" id="1050" inline="true">
                     <value name="STARTX">
-                      <block type="math_number" id="1057">
-                        <field name="NUM">10</field>
+                      <block type="math_arithmetic" id="1135" inline="true">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="math_number" id="1057">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="1136">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                     <value name="STARTY">
