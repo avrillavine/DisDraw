@@ -13,7 +13,7 @@
           <block type="oled_setcursor" id="488" inline="true">
             <value name="STARTX">
               <block type="math_number" id="489">
-                <field name="NUM">1</field>
+                <field name="NUM">0</field>
               </block>
             </value>
             <value name="STARTY">
@@ -22,43 +22,57 @@
               </block>
             </value>
             <next>
-              <block type="controls_if" id="391" inline="false">
-                <value name="IF0">
-                  <block type="sensor_button" id="392">
-                    <field name="OBJECT">UP</field>
+              <block type="oled_setend" id="634" inline="true">
+                <value name="ENDX">
+                  <block type="math_number" id="635">
+                    <field name="NUM">0</field>
                   </block>
                 </value>
-                <statement name="DO0">
-                  <block type="oled_setcursor" id="418" inline="true">
-                    <value name="STARTX">
-                      <block type="math_number" id="445">
-                        <field name="NUM">0</field>
+                <value name="ENDY">
+                  <block type="math_number" id="636">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="391" inline="false">
+                    <value name="IF0">
+                      <block type="sensor_button" id="392">
+                        <field name="OBJECT">UP</field>
                       </block>
                     </value>
-                    <value name="STARTY">
-                      <block type="math_number" id="444">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="oled_linerect" id="456">
-                        <field name="OBJECT">LINE</field>
+                    <statement name="DO0">
+                      <block type="oled_setcursor" id="418" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="445">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="444">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="controls_if" id="457" inline="false">
-                            <value name="IF0">
-                              <block type="sensor_button" id="458">
-                                <field name="OBJECT">DOWN</field>
+                          <block type="oled_linerect" id="456">
+                            <field name="OBJECT">LINE</field>
+                            <next>
+                              <block type="controls_if" id="457" inline="false">
+                                <value name="IF0">
+                                  <block type="sensor_button" id="458">
+                                    <field name="OBJECT">DOWN</field>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="oled_cleardisplay" id="508"></block>
+                                </statement>
                               </block>
-                            </value>
-                            <statement name="DO0">
-                              <block type="oled_cleardisplay" id="508"></block>
-                            </statement>
+                            </next>
                           </block>
                         </next>
                       </block>
-                    </next>
+                    </statement>
                   </block>
-                </statement>
+                </next>
               </block>
             </next>
           </block>
