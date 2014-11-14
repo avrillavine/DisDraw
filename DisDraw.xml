@@ -54,7 +54,6 @@
                             </value>
                             <statement name="DO">
                               <block type="controls_if" id="1329" inline="false">
-                                <mutation elseif="1"></mutation>
                                 <value name="IF0">
                                   <block type="logic_compare" id="1335" inline="true">
                                     <field name="OP">LT</field>
@@ -88,29 +87,6 @@
                                         </value>
                                       </block>
                                     </value>
-                                  </block>
-                                </statement>
-                                <value name="IF1">
-                                  <block type="sensor_button" id="1429">
-                                    <field name="OBJECT">ENTER</field>
-                                  </block>
-                                </value>
-                                <statement name="DO1">
-                                  <block type="oled_cleardisplay" id="1430">
-                                    <next>
-                                      <block type="oled_setend" id="1431" inline="true">
-                                        <value name="ENDX">
-                                          <block type="variables_get" id="1432">
-                                            <field name="VAR">clear</field>
-                                          </block>
-                                        </value>
-                                        <value name="ENDY">
-                                          <block type="variables_get" id="1433">
-                                            <field name="VAR">clear</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </next>
                                   </block>
                                 </statement>
                                 <next>
@@ -245,5 +221,8 @@
         </next>
       </block>
     </next>
+  </block>
+  <block type="sensor_button" id="1429" x="271" y="290">
+    <field name="OBJECT">ENTER</field>
   </block>
 </xml>
