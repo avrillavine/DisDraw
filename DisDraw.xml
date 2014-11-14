@@ -51,6 +51,9 @@
                                 <next>
                                   <block type="oled_linerect" id="261">
                                     <field name="OBJECT">LINE</field>
+                                    <next>
+                                      <block type="oled_cleardisplay" id="262"></block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
