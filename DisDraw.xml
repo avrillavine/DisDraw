@@ -204,21 +204,30 @@
                       </block>
                     </statement>
                     <statement name="ELSE">
-                      <block type="oled_cleardisplay" id="1464">
-                        <next>
-                          <block type="oled_setend" id="1465" inline="true">
-                            <value name="ENDX">
-                              <block type="math_number" id="1477">
-                                <field name="NUM">1</field>
-                              </block>
-                            </value>
-                            <value name="ENDY">
-                              <block type="math_number" id="1487">
-                                <field name="NUM">1</field>
-                              </block>
-                            </value>
+                      <block type="controls_if" id="1523" inline="false">
+                        <value name="IF0">
+                          <block type="sensor_button" id="1524">
+                            <field name="OBJECT">ENTER</field>
                           </block>
-                        </next>
+                        </value>
+                        <statement name="DO0">
+                          <block type="oled_cleardisplay" id="1464">
+                            <next>
+                              <block type="oled_setend" id="1465" inline="true">
+                                <value name="ENDX">
+                                  <block type="math_number" id="1477">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <value name="ENDY">
+                                  <block type="math_number" id="1487">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
                       </block>
                     </statement>
                   </block>
