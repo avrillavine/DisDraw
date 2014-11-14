@@ -51,23 +51,7 @@
                               </block>
                             </value>
                             <statement name="DO0">
-                              <block type="oled_setcursor" id="460" inline="true">
-                                <value name="STARTX">
-                                  <block type="math_number" id="461">
-                                    <field name="NUM">0</field>
-                                  </block>
-                                </value>
-                                <value name="STARTY">
-                                  <block type="math_number" id="462">
-                                    <field name="NUM">0</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="oled_linerect" id="463">
-                                    <field name="OBJECT">LINE</field>
-                                  </block>
-                                </next>
-                              </block>
+                              <block type="oled_cleardisplay" id="508"></block>
                             </statement>
                           </block>
                         </next>
