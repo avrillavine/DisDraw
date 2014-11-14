@@ -38,7 +38,7 @@
                     </value>
                     <statement name="DO0">
                       <block type="controls_whileUntil" id="1243" inline="false">
-                        <field name="MODE">UNTIL</field>
+                        <field name="MODE">WHILE</field>
                         <value name="NUMBER">
                           <block type="sensor_button" id="1244">
                             <field name="OBJECT">DOWN</field>
@@ -124,7 +124,7 @@
                     </value>
                     <statement name="DO1">
                       <block type="controls_whileUntil" id="1392" inline="false">
-                        <field name="MODE">UNTIL</field>
+                        <field name="MODE">WHILE</field>
                         <value name="NUMBER">
                           <block type="sensor_button" id="1393">
                             <field name="OBJECT">UP</field>
