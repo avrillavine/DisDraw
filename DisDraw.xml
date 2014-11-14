@@ -30,7 +30,7 @@
                 </value>
                 <next>
                   <block type="controls_if" id="1021" inline="false">
-                    <mutation elseif="2"></mutation>
+                    <mutation elseif="1" else="1"></mutation>
                     <value name="IF0">
                       <block type="sensor_button" id="835">
                         <field name="OBJECT">UP</field>
@@ -203,12 +203,7 @@
                         </statement>
                       </block>
                     </statement>
-                    <value name="IF2">
-                      <block type="sensor_button" id="1463">
-                        <field name="OBJECT">ENTER</field>
-                      </block>
-                    </value>
-                    <statement name="DO2">
+                    <statement name="ELSE">
                       <block type="oled_cleardisplay" id="1464">
                         <next>
                           <block type="oled_setend" id="1465" inline="true">
