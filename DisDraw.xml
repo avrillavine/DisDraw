@@ -165,6 +165,21 @@
                                     </value>
                                   </block>
                                 </value>
+                                <next>
+                                  <block type="procedures_ifreturn" id="1589" inline="true">
+                                    <mutation value="1"></mutation>
+                                    <value name="CONDITION">
+                                      <block type="variables_get" id="1687">
+                                        <field name="VAR">size</field>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE">
+                                      <block type="math_number" id="1665">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
                               </block>
                             </statement>
                             <next>
