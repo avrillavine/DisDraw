@@ -1,6 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="variables_set" id="1281" inline="true" x="98" y="15">
     <field name="VAR">size</field>
+    <value name="VALUE">
+      <block type="math_number" id="1313">
+        <field name="NUM">10</field>
+      </block>
+    </value>
     <next>
       <block type="controls_whileUntil" id="723" inline="false">
         <field name="MODE">UNTIL</field>
