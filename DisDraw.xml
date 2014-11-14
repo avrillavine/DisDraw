@@ -1,54 +1,72 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="391" inline="false" x="82" y="75">
-    <value name="IF0">
-      <block type="sensor_button" id="392">
-        <field name="OBJECT">UP</field>
-      </block>
-    </value>
-    <statement name="DO0">
-      <block type="oled_setcursor" id="488" inline="true">
+  <block type="oled_cleardisplay" id="637" x="87" y="51">
+    <next>
+      <block type="oled_setcursor" id="638" inline="true">
         <value name="STARTX">
-          <block type="math_number" id="489">
-            <field name="NUM">0</field>
+          <block type="math_number" id="639">
+            <field name="NUM">1</field>
           </block>
         </value>
         <value name="STARTY">
-          <block type="math_number" id="490">
+          <block type="math_number" id="640">
             <field name="NUM">1</field>
           </block>
         </value>
         <next>
-          <block type="oled_setend" id="634" inline="true">
-            <value name="ENDX">
-              <block type="math_number" id="635">
-                <field name="NUM">0</field>
+          <block type="controls_if" id="391" inline="false">
+            <value name="IF0">
+              <block type="sensor_button" id="392">
+                <field name="OBJECT">UP</field>
               </block>
             </value>
-            <value name="ENDY">
-              <block type="math_number" id="636">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-            <next>
-              <block type="oled_linerect" id="456">
-                <field name="OBJECT">LINE</field>
+            <statement name="DO0">
+              <block type="oled_setcursor" id="488" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="489">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="490">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="controls_if" id="457" inline="false">
-                    <value name="IF0">
-                      <block type="sensor_button" id="458">
-                        <field name="OBJECT">DOWN</field>
+                  <block type="oled_setend" id="634" inline="true">
+                    <value name="ENDX">
+                      <block type="math_number" id="635">
+                        <field name="NUM">0</field>
                       </block>
                     </value>
-                    <statement name="DO0">
-                      <block type="oled_cleardisplay" id="508"></block>
-                    </statement>
+                    <value name="ENDY">
+                      <block type="math_number" id="636">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_linerect" id="456">
+                        <field name="OBJECT">LINE</field>
+                        <next>
+                          <block type="controls_if" id="457" inline="false">
+                            <value name="IF0">
+                              <block type="sensor_button" id="458">
+                                <field name="OBJECT">DOWN</field>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="oled_cleardisplay" id="508"></block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
-            </next>
+            </statement>
           </block>
         </next>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
