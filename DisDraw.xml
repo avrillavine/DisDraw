@@ -42,7 +42,7 @@
                             </value>
                             <value name="ENDY">
                               <block type="math_number" id="219">
-                                <field name="NUM">20</field>
+                                <field name="NUM">30</field>
                               </block>
                             </value>
                             <next>
