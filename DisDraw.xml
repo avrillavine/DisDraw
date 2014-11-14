@@ -55,9 +55,6 @@
                                 <next>
                                   <block type="oled_linerect" id="1080">
                                     <field name="OBJECT">RECT</field>
-                                    <next>
-                                      <block type="oled_setcursor" id="1117" inline="true"></block>
-                                    </next>
                                   </block>
                                 </next>
                               </block>
