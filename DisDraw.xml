@@ -97,6 +97,15 @@
                                     <next>
                                       <block type="oled_linerect" id="1080">
                                         <field name="OBJECT">RECT</field>
+                                        <next>
+                                          <block type="robot_delay" id="1379" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="1386">
+                                                <field name="NUM">500</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
@@ -107,15 +116,6 @@
                         </statement>
                       </block>
                     </statement>
-                    <next>
-                      <block type="robot_delay" id="1379" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="1386">
-                            <field name="NUM">500</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
                   </block>
                 </next>
               </block>
