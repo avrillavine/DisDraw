@@ -41,7 +41,7 @@
                         <field name="MODE">UNTIL</field>
                         <value name="NUMBER">
                           <block type="sensor_button" id="1244">
-                            <field name="OBJECT">RIGHT</field>
+                            <field name="OBJECT">DOWN</field>
                           </block>
                         </value>
                         <statement name="DO">
