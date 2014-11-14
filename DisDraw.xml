@@ -74,6 +74,25 @@
                                                         <field name="NUM">20</field>
                                                       </block>
                                                     </value>
+                                                    <next>
+                                                      <block type="oled_color" id="169">
+                                                        <field name="OBJECT">GREEN</field>
+                                                        <next>
+                                                          <block type="oled_linerect" id="170">
+                                                            <field name="OBJECT">RECT</field>
+                                                            <next>
+                                                              <block type="robot_delay" id="171" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="172">
+                                                                    <field name="NUM">5</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
