@@ -211,24 +211,21 @@
                           </block>
                         </value>
                         <statement name="DO0">
-                          <block type="oled_cleardisplay" id="1464">
+                          <block type="oled_color" id="1567">
+                            <field name="OBJECT">BLACK</field>
                             <next>
-                              <block type="oled_setend" id="1465" inline="true">
-                                <value name="ENDX">
-                                  <block type="math_number" id="1477">
-                                    <field name="NUM">1</field>
-                                  </block>
-                                </value>
-                                <value name="ENDY">
-                                  <block type="math_number" id="1487">
-                                    <field name="NUM">1</field>
-                                  </block>
-                                </value>
+                              <block type="oled_linerect" id="1571">
+                                <field name="OBJECT">RECT</field>
                                 <next>
-                                  <block type="robot_delay" id="1525" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="1526">
-                                        <field name="NUM">500</field>
+                                  <block type="oled_setend" id="1568" inline="true">
+                                    <value name="ENDX">
+                                      <block type="math_number" id="1572">
+                                        <field name="NUM">50</field>
+                                      </block>
+                                    </value>
+                                    <value name="ENDY">
+                                      <block type="math_number" id="1573">
+                                        <field name="NUM">50</field>
                                       </block>
                                     </value>
                                   </block>
