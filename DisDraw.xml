@@ -88,36 +88,54 @@
                   </block>
                 </value>
                 <statement name="DO1">
-                  <block type="controls_whileUntil" id="26" inline="false">
-                    <field name="MODE">UNTIL</field>
-                    <value name="NUMBER">
-                      <block type="sensor_button" id="27">
-                        <field name="OBJECT">UP</field>
-                      </block>
-                    </value>
-                    <statement name="DO">
-                      <block type="oled_cleardisplay" id="28">
+                  <block type="oled_cleardisplay" id="169">
+                    <next>
+                      <block type="oled_setcursor" id="166" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="167">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="168">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="oled_linerect" id="29">
-                            <field name="OBJECT">RECT</field>
-                            <next>
-                              <block type="oled_setend" id="30" inline="true">
-                                <value name="ENDX">
-                                  <block type="math_number" id="31">
-                                    <field name="NUM">10</field>
-                                  </block>
-                                </value>
-                                <value name="ENDY">
-                                  <block type="math_number" id="32">
-                                    <field name="NUM">10</field>
-                                  </block>
-                                </value>
+                          <block type="controls_whileUntil" id="26" inline="false">
+                            <field name="MODE">UNTIL</field>
+                            <value name="NUMBER">
+                              <block type="sensor_button" id="27">
+                                <field name="OBJECT">UP</field>
                               </block>
-                            </next>
+                            </value>
+                            <statement name="DO">
+                              <block type="oled_cleardisplay" id="28">
+                                <next>
+                                  <block type="oled_linerect" id="29">
+                                    <field name="OBJECT">RECT</field>
+                                    <next>
+                                      <block type="oled_setend" id="30" inline="true">
+                                        <value name="ENDX">
+                                          <block type="math_number" id="31">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                        <value name="ENDY">
+                                          <block type="math_number" id="32">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
                           </block>
                         </next>
                       </block>
-                    </statement>
+                    </next>
                   </block>
                 </statement>
                 <next>
