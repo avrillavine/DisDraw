@@ -162,7 +162,7 @@
                               <block type="controls_if" id="391" inline="false">
                                 <value name="IF0">
                                   <block type="logic_compare" id="392" inline="true">
-                                    <field name="OP">GTE</field>
+                                    <field name="OP">GT</field>
                                     <value name="A">
                                       <block type="variables_get" id="393">
                                         <field name="VAR">size</field>
