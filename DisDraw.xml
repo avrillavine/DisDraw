@@ -164,7 +164,7 @@
                       <block type="controls_if" id="168" inline="false">
                         <value name="IF0">
                           <block type="sensor_button" id="169">
-                            <field name="OBJECT">UP</field>
+                            <field name="OBJECT">DOWN</field>
                           </block>
                         </value>
                         <statement name="DO0">
@@ -174,14 +174,14 @@
                                 <field name="MODE">UNTIL</field>
                                 <value name="NUMBER">
                                   <block type="sensor_button" id="172">
-                                    <field name="OBJECT">DOWN</field>
+                                    <field name="OBJECT">UP</field>
                                   </block>
                                 </value>
                                 <statement name="DO">
                                   <block type="controls_if" id="173" inline="false">
                                     <value name="IF0">
                                       <block type="logic_compare" id="174" inline="true">
-                                        <field name="OP">LT</field>
+                                        <field name="OP">GT</field>
                                         <value name="A">
                                           <block type="variables_get" id="175">
                                             <field name="VAR">size</field>
@@ -198,7 +198,7 @@
                                       <block type="oled_setend" id="177" inline="true">
                                         <value name="ENDX">
                                           <block type="math_arithmetic" id="178" inline="true">
-                                            <field name="OP">ADD</field>
+                                            <field name="OP">MINUS</field>
                                             <value name="A">
                                               <block type="variables_get" id="179">
                                                 <field name="VAR">size</field>
@@ -213,7 +213,7 @@
                                         </value>
                                         <value name="ENDY">
                                           <block type="math_arithmetic" id="181" inline="true">
-                                            <field name="OP">ADD</field>
+                                            <field name="OP">MINUS</field>
                                             <value name="A">
                                               <block type="variables_get" id="182">
                                                 <field name="VAR">size</field>
