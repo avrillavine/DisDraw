@@ -64,7 +64,7 @@
                                       <block type="controls_if" id="217" inline="false">
                                         <value name="IF0">
                                           <block type="logic_compare" id="242" inline="true">
-                                            <field name="OP">EQ</field>
+                                            <field name="OP">LT</field>
                                             <value name="A">
                                               <block type="variables_get" id="247">
                                                 <field name="VAR">size</field>
