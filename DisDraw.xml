@@ -59,7 +59,7 @@
                                       <block type="oled_setend" id="67" inline="true">
                                         <value name="ENDX">
                                           <block type="math_number" id="68">
-                                            <field name="NUM">10</field>
+                                            <field name="NUM">30</field>
                                           </block>
                                         </value>
                                         <value name="ENDY">
@@ -118,12 +118,12 @@
                                       <block type="oled_setend" id="30" inline="true">
                                         <value name="ENDX">
                                           <block type="math_number" id="31">
-                                            <field name="NUM">10</field>
+                                            <field name="NUM">5</field>
                                           </block>
                                         </value>
                                         <value name="ENDY">
                                           <block type="math_number" id="32">
-                                            <field name="NUM">10</field>
+                                            <field name="NUM">5</field>
                                           </block>
                                         </value>
                                       </block>
