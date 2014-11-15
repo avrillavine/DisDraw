@@ -81,7 +81,7 @@
                                           <block type="oled_setend" id="68" inline="true">
                                             <value name="ENDX">
                                               <block type="math_arithmetic" id="75" inline="true">
-                                                <field name="OP">MINUS</field>
+                                                <field name="OP">ADD</field>
                                                 <value name="A">
                                                   <block type="variables_get" id="76">
                                                     <field name="VAR">size</field>
@@ -96,7 +96,7 @@
                                             </value>
                                             <value name="ENDY">
                                               <block type="math_arithmetic" id="78" inline="true">
-                                                <field name="OP">MINUS</field>
+                                                <field name="OP">ADD</field>
                                                 <value name="A">
                                                   <block type="variables_get" id="79">
                                                     <field name="VAR">size</field>
@@ -176,32 +176,32 @@
                                   </block>
                                 </value>
                                 <statement name="DO0">
-                                  <block type="oled_setcursor" id="46" inline="true">
-                                    <value name="STARTX">
-                                      <block type="math_arithmetic" id="47" inline="true">
+                                  <block type="oled_setend" id="101" inline="true">
+                                    <value name="ENDX">
+                                      <block type="math_arithmetic" id="102" inline="true">
                                         <field name="OP">MINUS</field>
                                         <value name="A">
-                                          <block type="variables_get" id="48">
+                                          <block type="variables_get" id="103">
                                             <field name="VAR">size</field>
                                           </block>
                                         </value>
                                         <value name="B">
-                                          <block type="math_number" id="49">
+                                          <block type="math_number" id="104">
                                             <field name="NUM">10</field>
                                           </block>
                                         </value>
                                       </block>
                                     </value>
-                                    <value name="STARTY">
-                                      <block type="math_arithmetic" id="50" inline="true">
+                                    <value name="ENDY">
+                                      <block type="math_arithmetic" id="105" inline="true">
                                         <field name="OP">MINUS</field>
                                         <value name="A">
-                                          <block type="variables_get" id="51">
+                                          <block type="variables_get" id="106">
                                             <field name="VAR">size</field>
                                           </block>
                                         </value>
                                         <value name="B">
-                                          <block type="math_number" id="52">
+                                          <block type="math_number" id="107">
                                             <field name="NUM">10</field>
                                           </block>
                                         </value>
