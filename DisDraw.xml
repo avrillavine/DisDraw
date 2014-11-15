@@ -118,27 +118,7 @@
                           </block>
                         </value>
                         <next>
-                          <block type="oled_cleardisplay" id="15">
-                            <next>
-                              <block type="oled_linerect" id="16">
-                                <field name="OBJECT">RECT</field>
-                                <next>
-                                  <block type="oled_setend" id="17" inline="true">
-                                    <value name="ENDX">
-                                      <block type="math_number" id="18">
-                                        <field name="NUM">10</field>
-                                      </block>
-                                    </value>
-                                    <value name="ENDY">
-                                      <block type="math_number" id="19">
-                                        <field name="NUM">10</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
+                          <block type="oled_cleardisplay" id="15"></block>
                         </next>
                       </block>
                     </next>
