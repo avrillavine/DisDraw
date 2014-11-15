@@ -233,15 +233,35 @@
                                   <block type="oled_linerect" id="402">
                                     <field name="OBJECT">RECT</field>
                                     <next>
-                                      <block type="oled_setend" id="403" inline="true">
+                                      <block type="oled_setend" id="452" inline="true">
                                         <value name="ENDX">
-                                          <block type="variables_get" id="404">
-                                            <field name="VAR">size</field>
+                                          <block type="logic_compare" id="453" inline="true">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="454">
+                                                <field name="VAR">size</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="455">
+                                                <field name="NUM">10</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                         <value name="ENDY">
-                                          <block type="variables_get" id="405">
-                                            <field name="VAR">size</field>
+                                          <block type="logic_compare" id="456" inline="true">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="457">
+                                                <field name="VAR">size</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="458">
+                                                <field name="NUM">10</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
                                       </block>
