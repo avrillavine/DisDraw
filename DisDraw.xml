@@ -131,7 +131,31 @@
       </block>
     </statement>
     <next>
-      <block type="oled_cleardisplay" id="94"></block>
+      <block type="controls_if" id="123" inline="false">
+        <value name="IF0">
+          <block type="sensor_button" id="124">
+            <field name="OBJECT">ENTER</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="oled_cleardisplay" id="94">
+            <next>
+              <block type="oled_setcursor" id="145" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="146">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="147">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
     </next>
   </block>
 </xml>
