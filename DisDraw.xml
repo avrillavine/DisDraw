@@ -162,7 +162,7 @@
                               <block type="controls_if" id="391" inline="false">
                                 <value name="IF0">
                                   <block type="logic_compare" id="392" inline="true">
-                                    <field name="OP">LT</field>
+                                    <field name="OP">GTE</field>
                                     <value name="A">
                                       <block type="variables_get" id="393">
                                         <field name="VAR">size</field>
@@ -179,7 +179,7 @@
                                   <block type="oled_setend" id="395" inline="true">
                                     <value name="ENDX">
                                       <block type="math_arithmetic" id="396" inline="true">
-                                        <field name="OP">ADD</field>
+                                        <field name="OP">MINUS</field>
                                         <value name="A">
                                           <block type="variables_get" id="397">
                                             <field name="VAR">size</field>
@@ -194,7 +194,7 @@
                                     </value>
                                     <value name="ENDY">
                                       <block type="math_arithmetic" id="399" inline="true">
-                                        <field name="OP">ADD</field>
+                                        <field name="OP">MINUS</field>
                                         <value name="A">
                                           <block type="variables_get" id="400">
                                             <field name="VAR">size</field>
