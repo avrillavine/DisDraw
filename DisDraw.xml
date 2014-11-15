@@ -94,41 +94,6 @@
                                         </value>
                                       </block>
                                     </value>
-                                    <next>
-                                      <block type="procedures_ifreturn" id="161" inline="true">
-                                        <mutation value="1"></mutation>
-                                        <value name="CONDITION">
-                                          <block type="logic_compare" id="162" inline="true">
-                                            <field name="OP">GT</field>
-                                            <value name="A">
-                                              <block type="variables_get" id="163">
-                                                <field name="VAR">size</field>
-                                              </block>
-                                            </value>
-                                            <value name="B">
-                                              <block type="math_number" id="164">
-                                                <field name="NUM">30</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE">
-                                          <block type="math_arithmetic" id="165" inline="true">
-                                            <field name="OP">MINUS</field>
-                                            <value name="A">
-                                              <block type="variables_get" id="166">
-                                                <field name="VAR">size</field>
-                                              </block>
-                                            </value>
-                                            <value name="B">
-                                              <block type="math_number" id="167">
-                                                <field name="NUM">10</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </next>
                                   </block>
                                 </statement>
                                 <next>
