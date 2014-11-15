@@ -51,91 +51,90 @@
                               </block>
                             </value>
                             <next>
-                              <block type="controls_whileUntil" id="15" inline="false">
-                                <field name="MODE">UNTIL</field>
-                                <value name="NUMBER">
-                                  <block type="sensor_button" id="16">
-                                    <field name="OBJECT">DOWN</field>
+                              <block type="controls_if" id="18" inline="false">
+                                <value name="IF0">
+                                  <block type="logic_compare" id="19" inline="true">
+                                    <field name="OP">GT</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="20">
+                                        <field name="VAR">size</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="21">
+                                        <field name="NUM">30</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
-                                <statement name="DO">
-                                  <block type="oled_cleardisplay" id="17">
-                                    <next>
-                                      <block type="controls_if" id="18" inline="false">
-                                        <value name="IF0">
-                                          <block type="logic_compare" id="19" inline="true">
-                                            <field name="OP">GT</field>
-                                            <value name="A">
-                                              <block type="variables_get" id="20">
-                                                <field name="VAR">size</field>
-                                              </block>
-                                            </value>
-                                            <value name="B">
-                                              <block type="math_number" id="21">
-                                                <field name="NUM">30</field>
-                                              </block>
-                                            </value>
+                                <statement name="DO0">
+                                  <block type="oled_setend" id="68" inline="true">
+                                    <value name="ENDX">
+                                      <block type="math_arithmetic" id="75" inline="true">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="76">
+                                            <field name="VAR">size</field>
                                           </block>
                                         </value>
-                                        <statement name="DO0">
-                                          <block type="oled_setend" id="68" inline="true">
-                                            <value name="ENDX">
-                                              <block type="math_arithmetic" id="75" inline="true">
-                                                <field name="OP">ADD</field>
-                                                <value name="A">
-                                                  <block type="variables_get" id="76">
-                                                    <field name="VAR">size</field>
-                                                  </block>
-                                                </value>
-                                                <value name="B">
-                                                  <block type="math_number" id="77">
-                                                    <field name="NUM">10</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                            <value name="ENDY">
-                                              <block type="math_arithmetic" id="78" inline="true">
-                                                <field name="OP">ADD</field>
-                                                <value name="A">
-                                                  <block type="variables_get" id="79">
-                                                    <field name="VAR">size</field>
-                                                  </block>
-                                                </value>
-                                                <value name="B">
-                                                  <block type="math_number" id="80">
-                                                    <field name="NUM">10</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </value>
+                                        <value name="B">
+                                          <block type="math_number" id="77">
+                                            <field name="NUM">10</field>
                                           </block>
-                                        </statement>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="ENDY">
+                                      <block type="math_arithmetic" id="78" inline="true">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="79">
+                                            <field name="VAR">size</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="80">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="oled_linerect" id="29">
+                                    <field name="OBJECT">RECT</field>
+                                    <next>
+                                      <block type="oled_setend" id="98" inline="true">
+                                        <value name="ENDX">
+                                          <block type="variables_get" id="99">
+                                            <field name="VAR">size</field>
+                                          </block>
+                                        </value>
+                                        <value name="ENDY">
+                                          <block type="variables_get" id="100">
+                                            <field name="VAR">size</field>
+                                          </block>
+                                        </value>
                                         <next>
-                                          <block type="oled_linerect" id="29">
-                                            <field name="OBJECT">RECT</field>
-                                            <next>
-                                              <block type="oled_setend" id="98" inline="true">
-                                                <value name="ENDX">
-                                                  <block type="variables_get" id="99">
-                                                    <field name="VAR">size</field>
-                                                  </block>
-                                                </value>
-                                                <value name="ENDY">
-                                                  <block type="variables_get" id="100">
-                                                    <field name="VAR">size</field>
-                                                  </block>
-                                                </value>
+                                          <block type="controls_whileUntil" id="15" inline="false">
+                                            <field name="MODE">UNTIL</field>
+                                            <value name="NUMBER">
+                                              <block type="sensor_button" id="16">
+                                                <field name="OBJECT">DOWN</field>
                                               </block>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="oled_cleardisplay" id="17"></block>
+                                            </statement>
+                                            <next>
+                                              <block type="oled_cleardisplay" id="37"></block>
                                             </next>
                                           </block>
                                         </next>
                                       </block>
                                     </next>
                                   </block>
-                                </statement>
-                                <next>
-                                  <block type="oled_cleardisplay" id="37"></block>
                                 </next>
                               </block>
                             </next>
