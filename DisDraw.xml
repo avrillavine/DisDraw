@@ -64,7 +64,7 @@
                                       <block type="controls_if" id="217" inline="false">
                                         <value name="IF0">
                                           <block type="logic_compare" id="242" inline="true">
-                                            <field name="OP">LT</field>
+                                            <field name="OP">EQ</field>
                                             <value name="A">
                                               <block type="variables_get" id="247">
                                                 <field name="VAR">size</field>
@@ -72,7 +72,7 @@
                                             </value>
                                             <value name="B">
                                               <block type="math_number" id="264">
-                                                <field name="NUM">30</field>
+                                                <field name="NUM">10</field>
                                               </block>
                                             </value>
                                           </block>
@@ -162,7 +162,7 @@
                               <block type="controls_if" id="391" inline="false">
                                 <value name="IF0">
                                   <block type="logic_compare" id="392" inline="true">
-                                    <field name="OP">GT</field>
+                                    <field name="OP">EQ</field>
                                     <value name="A">
                                       <block type="variables_get" id="393">
                                         <field name="VAR">size</field>
