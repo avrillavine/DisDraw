@@ -257,33 +257,6 @@
                         </next>
                       </block>
                     </statement>
-                    <next>
-                      <block type="controls_if" id="62" inline="false">
-                        <value name="IF0">
-                          <block type="sensor_button" id="63">
-                            <field name="OBJECT">ENTER</field>
-                          </block>
-                        </value>
-                        <statement name="DO0">
-                          <block type="oled_cleardisplay" id="64">
-                            <next>
-                              <block type="oled_setcursor" id="65" inline="true">
-                                <value name="STARTX">
-                                  <block type="math_number" id="66">
-                                    <field name="NUM">1</field>
-                                  </block>
-                                </value>
-                                <value name="STARTY">
-                                  <block type="math_number" id="67">
-                                    <field name="NUM">1</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </statement>
-                      </block>
-                    </next>
                   </block>
                 </next>
               </block>
