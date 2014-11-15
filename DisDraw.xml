@@ -103,20 +103,20 @@
                                 <next>
                                   <block type="oled_cleardisplay" id="37">
                                     <next>
-                                      <block type="oled_setend" id="98" inline="true">
-                                        <value name="ENDX">
-                                          <block type="variables_get" id="99">
-                                            <field name="VAR">size</field>
-                                          </block>
-                                        </value>
-                                        <value name="ENDY">
-                                          <block type="variables_get" id="100">
-                                            <field name="VAR">size</field>
-                                          </block>
-                                        </value>
+                                      <block type="oled_linerect" id="29">
+                                        <field name="OBJECT">RECT</field>
                                         <next>
-                                          <block type="oled_linerect" id="29">
-                                            <field name="OBJECT">RECT</field>
+                                          <block type="oled_setend" id="98" inline="true">
+                                            <value name="ENDX">
+                                              <block type="variables_get" id="99">
+                                                <field name="VAR">size</field>
+                                              </block>
+                                            </value>
+                                            <value name="ENDY">
+                                              <block type="variables_get" id="100">
+                                                <field name="VAR">size</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </next>
                                       </block>
