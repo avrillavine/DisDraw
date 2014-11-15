@@ -117,13 +117,33 @@
                                             <next>
                                               <block type="oled_setend" id="67" inline="true">
                                                 <value name="ENDX">
-                                                  <block type="variables_get" id="386">
-                                                    <field name="VAR">size</field>
+                                                  <block type="logic_compare" id="447" inline="true">
+                                                    <field name="OP">EQ</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="386">
+                                                        <field name="VAR">size</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="450">
+                                                        <field name="NUM">30</field>
+                                                      </block>
+                                                    </value>
                                                   </block>
                                                 </value>
                                                 <value name="ENDY">
-                                                  <block type="variables_get" id="387">
-                                                    <field name="VAR">size</field>
+                                                  <block type="logic_compare" id="448" inline="true">
+                                                    <field name="OP">EQ</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="449">
+                                                        <field name="VAR">size</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="451">
+                                                        <field name="NUM">30</field>
+                                                      </block>
+                                                    </value>
                                                   </block>
                                                 </value>
                                               </block>
